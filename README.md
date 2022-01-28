@@ -1,4 +1,4 @@
-# Selenium Automation Basic_Framework_1
+# Java-based Selenium Automation Basic_Framework_1
 This is a test framework just to check how git works in IntelliJ and Github
 #==================================================================
 This framework has the following components: 
