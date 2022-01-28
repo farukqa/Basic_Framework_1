@@ -1,11 +1,16 @@
 package com.mmhayes.myqc.classes.reusables;
 
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Reusable_Classes {
     // all the reusable classes (like click, send keys, right click, taking screenshot etc will be listed in this class
@@ -20,6 +25,16 @@ public class Reusable_Classes {
         String image = logger.addScreenCapture(path + fileName);
         logger.log(LogStatus.FAIL, "", image);
 
+    }
+
+    // getting the current date and time to use it in the automation report
+    public static String getDateTime() {
+        SimpleDateFormat sdfDateTime;
+        String strDateTime;
+        sdfDateTime = new SimpleDateFormat("MMddyyyy'_'HHmmss'_'SSS");
+        Date now = new Date();
+        strDateTime = sdfDateTime.format(now);
+        return strDateTime;
     }
 }
 
