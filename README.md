@@ -1,5 +1,5 @@
-# Selenium Basic_Framework_1
-# This is a test framework just to check how git works in IntelliJ and Github
+# Selenium Automation Basic_Framework_1
+This is a test framework just to check how git works in IntelliJ and Github
 #==================================================================
 This framework has the following components: 
 1. A reusable package which includes the following classes- 
